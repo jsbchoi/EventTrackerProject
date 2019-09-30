@@ -1,0 +1,2 @@
+rootProject.name = 'PayrollApp'
+includeFlat 'PayrollAppJPA'
