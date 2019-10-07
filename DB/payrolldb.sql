@@ -90,7 +90,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `payrolldb`;
-INSERT INTO `employee` (`id`, `name`, `role`, `base_salary`, `hourly_rate`, `loan_amount`) VALUES (1, 'Justin', 'payroll', 12000, 15.00, 250);
+INSERT INTO `employee` (`id`, `name`, `role`, `base_salary`, `hourly_rate`, `loan_amount`) VALUES (1, 'Justin', 'payroll', 0, 15.00, 0);
+INSERT INTO `employee` (`id`, `name`, `role`, `base_salary`, `hourly_rate`, `loan_amount`) VALUES (2, 'Tess', 'admin', 0, 12.50, 0);
 
 COMMIT;
 
@@ -110,7 +111,8 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `payrolldb`;
-INSERT INTO `record` (`id`, `overtime`, `hours`, `total`, `commission`, `bonus`, `employee_id`, `payroll_week_id`) VALUES (1, 15, 40, 3000, 0, 0, 1, 1);
+INSERT INTO `record` (`id`, `overtime`, `hours`, `total`, `commission`, `bonus`, `employee_id`, `payroll_week_id`) VALUES (1, 15, 40, 937.5, 0, 0, 1, 1);
+INSERT INTO `record` (`id`, `overtime`, `hours`, `total`, `commission`, `bonus`, `employee_id`, `payroll_week_id`) VALUES (2, 0, 40, 500, 0, 0, 2, 1);
 
 COMMIT;
 
