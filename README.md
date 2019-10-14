@@ -1,7 +1,7 @@
 ## Week 12 RESTful Payroll App
 ### Overview
 
-This is a simple API designed to help organize and keep track of employee payroll. I will be using AngularJS to develop a GUI for CRUD operations and consuming the data from the REST endpoints.
+This is a simple API designed to help organize and keep track of employee payroll. I will be using Angular to develop a GUI for CRUD operations and consuming the data from the REST endpoints.
 
 ### Technologies used
 
