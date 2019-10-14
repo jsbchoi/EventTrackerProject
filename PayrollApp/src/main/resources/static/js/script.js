@@ -133,6 +133,8 @@ var editPayroll = function(e) {
 }
 
 function putPayroll(payroll, prId) {
+	console.log('Payroll:');
+	console.log(payroll);
 	var xhr = new XMLHttpRequest();
 	xhr.open('PUT', 'api/payroll/' + prId, true);
 	xhr.setRequestHeader("Content-type", "application/json");
@@ -151,6 +153,7 @@ function putPayroll(payroll, prId) {
 	var userObj = JSON.stringify(payroll);
 	xhr.send(userObj);
 	location.reload();
+
 }
 function getRecords(prId) {
 	var xhr = new XMLHttpRequest();
