@@ -12,6 +12,7 @@ export class PayrollAppComponent implements OnInit {
   payrolls = [];
   newPayroll = new Payroll();
   editPayroll = new Payroll();
+  records = null;
   showEditForm = false;
 
   constructor(private payrollService: PayrollService
